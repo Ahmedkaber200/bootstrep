@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+    </script>
+
+    <title>Home</title>
+</head>
+
+<style>
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+.bg-color {
+    background-color: #37517e;
+}
+
+.p-font-size {
+    font-size: 28px;
+    color: gainsboro;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn-get-started {
+    background-color: #47b2e4;
+    border-radius: 50px;
+    padding: 9px 24px 10px 23px;
+    border: none;
+    font-weight: bold;
+}
+
+.circle-icon {
+    color: white;
+    font-size: 29px;
+}
+
+.watch-video {
+    color: white;
+    border: none;
+    border-color: red;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.main-btn i {
+    padding-left: 10px;
+}
+
+.about {
+    background-color: #fff;
+}
+
+.about-heading h2 {
+    font-size: 32px;
+    color: #37517e;
+    font-weight: bold;
+}
+
+.learn-more-btn {
+    font-family: "Poppins", sans-serif;
+    color: #47b2e4;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 4px;
+    line-height: 1;
+    border: 2px solid #47b2e4;
+}
+
+.eum-ipsam-laborum {
+    background-color: #f3f5fa;
+    padding: 50px 0px;
+}
+
+.eum-ipsam-laborum h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: #37517e;
+}
+
+.eum-ipsam-laborum p {
+    font-size: 15px;
+    color: #848484;
+}
+
+.number-set {
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.accordion-button:hover {
+    color: #47b2e4;
+}
+
+.voluptatem-dignissimos {
+    background-color: #fff;
+    padding: 35px 0;
+}
+
+.voluptatem-dignissimos h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #37517e;
+    font-family: "Poppins", sans-serif;
+}
+
+.voluptatem-dignissimos p {
+    font-style: italic;
+}
+
+.progress-bar-set label {
+    color: #37517e;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #37517e !important;
+}
+
+.services {
+    background-color: #f3f5fa;
+    padding: 80px 0;
+}
+
+.services-heading {
+    text-align: center;
+}
+
+.services-heading h2 {
+    font-size: 32px;
+    color: #37517e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-heading {
+    color: #848484;
+}
+
+.services .icon-box {
+    box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+    padding: 50px 30px;
+    background: #fff;
+}
+
+.about p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #848484;
+}
+
+.icon-box i {
+    color: #47b2e4;
+    font-size: 36px;
+}
+
+.icon-box h4 a {
+    color: #37517e;
+    text-decoration: none;
+}
+
+.icon-box p {
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.call-to-action {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(./images/img4.png) fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.call-to-action h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.call-to-action p {
+    color: #fff;
+}
+
+.call-to-action .cta-btn {
+    font-family: "Jost", sans-serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.call-to-action .cta-btn:hover {
+    color: #fff;
+    background-color: #73c5eb;
+    border-color: #73c5eb;
+}
+
+.team {
+    background-color: #f3f5fa;
+    padding: 100px 0px;
+}
+
+.team-heading h2 {
+    font-size: 32px;
+    color: #37517e;
+    font-weight: bold;
+}
+
+.team-heading p {
+    color: #848484;
+}
+
+.team .member {
+    box-shadow: 0px 2px 15px rgb(85 98 112 / 8%);
+    padding: 30px;
+    border-radius: 4px;
+    background: #fff;
+    margin-top: 25px;
+}
+
+.team .member .pic {
+    width: 140px;
+}
+
+.team .member .member-heading {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+    line-height: 1.2;
+}
+
+.team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.team .member .member-para {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.team .member .member-info {
+    padding-left: 30px;
+}
+
+.team .member .social {
+    margin-top: 12px;
+    display: flex;
+}
+
+.team .member .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    background: #8795a4;
+    margin-right: 4px;
+    text-decoration: none;
+}
+
+.team .member .social a .team-icon {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+.pricing {
+    background-color: #fff !important;
+    padding: 100px 0px;
+}
+
+.pricing-heading h2 {
+    font-size: 32px;
+    color: #37517e;
+    font-weight: bold;
+}
+
+.pricing-heading p {
+    color: #848484;
+}
+
+.back-clr {
+    background-color: #37517e;
+}
+
+.frequently-questions {
+    background-color: #f3f5fa;
+    padding: 100px 0px;
+}
+
+.frequently-questions h2 {
+    font-size: 32px;
+    color: #37517e;
+    font-weight: bold;
+}
+
+i.fa.fa-question-circle.icon-set {
+    font-size: 20px;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 100px 0px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #37517e;
+    font-weight: bold;
+}
+
+.cta-btn {
+    font-family: "Jost", sans-serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    margin: 10px;
+    border: 2px solid #209dd8;
+    color: #209dd8;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.cta-btn:hover {
+    background-color: #209dd8;
+    border-color: #fff;
+    color: #fff;
+}
+
+.contact-heading p {
+    color: #848484;
+}
+
+.contact .info {
+    border-top: 3px solid #47b2e4;
+    border-bottom: 3px solid #47b2e4;
+    padding: 30px;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #47b2e4;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e7f5fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #37517e;
+}
+
+.contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #6182ba;
+}
+
+.contact .php-email-form {
+    width: 100%;
+    border-top: 3px solid #47b2e4;
+    border-bottom: 3px solid #47b2e4;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.btn-send-msg {
+    background: #47b2e4;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.join-ournewsletter {
+    padding: 50px 0;
+    background: #f3f5fa;
+    text-align: center;
+    font-size: 15px;
+    color: #444444;
+}
+
+.join-ournewsletter h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: #37517e;
+}
+
+.input-set {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+
+.join-ournewsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 6%);
+    text-align: left;
+}
+
+.join-ournewsletter .btn-set {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #47b2e4;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+.footer {
+    padding: 60px 0 30px 0;
+    background: #fff;
+}
+
+.footer .footer-contact h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #37517e;
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #37517e;
+    padding-bottom: 12px;
+    padding-top: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul a {
+    color: #777777;
+    display: inline-block;
+    line-height: 1;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.footer .footer-icon-set {
+    color: #209dd8;
+}
+
+.footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #47b2e4;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Jost", sans-serif;
+    color: #5e5e5e;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">ARSHA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-primary btn-get-started">Get Started</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-color">
+        <div class="container pt-5 pb-5">
+            <div class="row align-items-center">
+                <div class="col-sm-6" id="hero">
+                    <h1>Better Solutions For Your Business</h1>
+                    <p class="p-font-size">We are team of talented designers making websites with Bootstrap</p>
+                    <div class="main-btn">
+                        <button class="btn btn-primary btn-get-started">Get Started</button>
+                        <a href="#">
+                            <i class="fa fa-play-circle circle-icon"></i>
+                            <span class="watch-video">Watch Video</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="./images/hero-img.png" width="100%" height="auto" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-heading">
+                <h2 class="text-center mt-5">ABOUT US</h2>
+            </div>
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-xs-6 col-sm-6 mb-1">
+                    <img src="./images/img2.png" width="100%" height="auto" alt="">
+                </div>
+                <div class="col-xs-6 col-md-6 pt-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                        quia. harum maxime adipisci amet laborum. Perspiciatis
+                        minima nesciunt dolorem!</p>
+                    <button href="#" class="btn-learn-more learn-more-btn mb-5">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eum-ipsam-laborum">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="pt-4">Eum ipsam laborum deleniti
+                        <strong>velit pariatur architecto aut nihil</strong>
+                    </h3>
+                    <p class="pt-2 paragraph-set"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="mb-2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="number-set">01</span> Non consectetur a erat nam at lectus urna
+                                        duis?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet
+                                        non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus
+                                        dolor
+                                        purus non.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="number-set">02</span> Feugiat scelerisque varius morbi enim nunc?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum
+                                        velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque
+                                        eleifend
+                                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros
+                                        in
+                                        cursus turpis massa tincidunt dui.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <div class="accordion-item pb-3">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span class="number-set">03</span> Dolor sit amet consectetur adipiscing elit?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus
+                                        pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                                        Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
+                                        tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="./images/img2.png" width="100%" height="auto" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="voluptatem-dignissimos">
+        <div class=" container">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-sm-6 pt-5">
+                    <img src="./images/img3.png" width="100%" height="auto" alt="">
+                </div>
+                <div class="col-md-6 pt-4">
+                    <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="progress-bar-set">
+                        <label>HTML</label>
+                        <div class="progress mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-set">
+                        <label>CSS</label>
+                        <div class="progress mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100">90%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-set">
+                        <label>JAVASCRIPT</label>
+                        <div class="progress mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100">75%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-set">
+                        <label>PHOTOSHOP</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55"
+                                aria-valuemin="0" aria-valuemax="100">55%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services pb-5 pt-5">
+        <div class="container">
+            <div class="services-heading">
+                <h2>Services</h2>
+                <p class="pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                    quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="icon-box">
+                        <i class="fa fa-dribbble pb-2"></i>
+                        <h4>
+                            <a href="">Lorem Ipsum</a>
+                        </h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="icon-box">
+                        <i class="fa fa-file pb-2"></i>
+                        <h4>
+                            <a href="">Sed ut perspici</a>
+                        </h4>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="icon-box">
+                        <i class="fa fa-tachometer pb-2"></i>
+                        <h4>
+                            <a href="">Magni Dolores</a>
+                        </h4>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="icon-box">
+                        <i class="fa fa-graduation-cap pb-2" aria-hidden="true"></i>
+                        <h4>
+                            <a href="">Nemo Enim</a>
+                        </h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>Call To Action</h3>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit
+                        anim id est laborum.</p>
+                </div>
+                <div class="col-md-3 cta-btn-container w-auto">
+                    <a href="#" class="cta-btn align-middle mt-4">Call To Action</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team pb-5 pt-5">
+        <div class="container">
+            <div class="team-heading text-center">
+                <h2>Team</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="./images/team1.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <p class="member-heading">Walter White</p>
+                            <span>Chief Executive Officer</span>
+                            <p class="member-para">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter team-icon"></i></a>
+                                <a href=""><i class="fa fa-facebook-f team-icon"></i></a>
+                                <a href=""><i class="fa fa-instagram team-icon"></i></a>
+                                <a href=""> <i class="fa fa-linkedin team-icon" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="./images/team2.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <p class="member-heading">
+                                Sarah Jhonson</p>
+                            <span>Product Manager</span>
+                            <p class="member-para">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter team-icon"></i></a>
+                                <a href=""><i class="fa fa-facebook-f team-icon"></i></a>
+                                <a href=""><i class="fa fa-instagram team-icon"></i></a>
+                                <a href=""> <i class="fa fa-linkedin team-icon" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="./images/team3.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <p class="member-heading">
+                                William Anderson</p>
+                            <span>CTO</span>
+                            <p class="member-para">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter team-icon"></i></a>
+                                <a href=""><i class="fa fa-facebook-f team-icon"></i></a>
+                                <a href=""><i class="fa fa-instagram team-icon"></i></a>
+                                <a href=""> <i class="fa fa-linkedin team-icon" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="./images/team4.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <p class="member-heading">Amanda Jepson</p>
+                            <span>Accountant</span>
+                            <p class="member-para">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter team-icon"></i></a>
+                                <a href=""><i class="fa fa-facebook-f team-icon"></i></a>
+                                <a href=""><i class="fa fa-instagram team-icon"></i></a>
+                                <a href=""> <i class="fa fa-linkedin team-icon" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="pricing-heading text-center">
+                <h2 class="pb-2">Pricing</h2>
+                <p class="pb-2">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                    quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card back-clr mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Free Plan</h5>
+                            <h6 class="h1 text-white text-center">$0<span class="h6 text-white-50">per month</span></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4 text-center">
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Quam
+                                    adipiscing vitae proin</li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Nec
+                                    feugiat nisl pretium</li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Nec
+                                    feugiat nisl pretium</li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fa fa-times"></i></span><del>Pharetra massa massa ultricies</del>
+                                </li>
+                                <li class="text-muted mb-3"><span class="mr-3"><i
+                                            class="fa fa-times"></i></span><del>Pharetra massa massa ultricies</del>
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="cta-btn text-uppercase rounded-lg py-3">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card back-clr mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Business Plan</h5>
+                            <h6 class="h1 text-white text-center">$29<span class="h6 text-white-50">per month</span>
+                            </h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4 text-center">
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Quam
+                                    adipiscing vitae proin</li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Nec
+                                    feugiat nisl pretium</li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Nec
+                                    feugiat nisl pretium</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fa fa-check text-success"></i></span>Pharetra massa massa ultricies
+                                </li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span>Massa
+                                    ultricies mi quis hendrerit
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="cta-btn text-uppercase rounded-lg py-3">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card back-clr mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Developer Plan</h5>
+                            <h6 class="h1 text-white text-center">$49<span class="h6 text-white-50">per month</span>
+                            </h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4 text-center">
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Quam
+                                    adipiscing vitae proin</li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Nec
+                                    feugiat nisl pretium</li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span> Nec
+                                    feugiat nisl pretium</li>
+                                <li class="mb-3"><span class="mr-3"><i
+                                            class="fa fa-check text-success"></i></span>Pharetra massa massa ultricies
+                                </li>
+                                <li class="mb-3"><span class="mr-3"><i class="fa fa-check text-success"></i></span>Massa
+                                    ultricies mi quis hendrerit
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="cta-btn text-uppercase rounded-lg py-3">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frequently-questions pb-5 pt-5">
+        <div class="container">
+            <div class="frequently-heading text-center">
+                <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas?</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="number-set"><i class="fa fa-question-circle icon-set"></i></span>
+                                        Non consectetur a erat nam at lectus urna
+                                        duis?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet
+                                        non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus
+                                        dolor
+                                        purus non.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="number-set"><i class="fa fa-question-circle icon-set"></i></span>
+                                        Feugiat scelerisque varius morbi enim nunc?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum
+                                        velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque
+                                        eleifend
+                                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros
+                                        in
+                                        cursus turpis massa tincidunt dui.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span class="number-set"><i class="fa fa-question-circle icon-set"></i></span>
+                                        Dolor sit amet consectetur adipiscing elit?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus
+                                        pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                                        Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
+                                        tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <span class="number-set"><i class="fa fa-question-circle icon-set"></i></span>
+                                        Tempus quam pellentesque nec nam aliquam sem
+                                        et tortor consequat?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                        Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                        turpis cursus in?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        <span class="number-set"><i class="fa fa-question-circle icon-set"></i></span>
+                                        Tortor vitae purus faucibus ornare. Varius
+                                        vel pharetra vel turpis nunc eget lorem dolor?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
+                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact pb-5 pt-5">
+        <div class="container">
+            <div class="contact-heading text-center">
+                <h2>Contact</h2>
+                <p class="pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                    quidem.
+                    Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat
+                    sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="info">
+                        <div class="address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <h4>Location:</h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="fa fa-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>info@example.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="fa fa-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+1 5589 55488 55s</p>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                            frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <form method="post" class="php-email-form">
+                        <div class="row mb-3">
+                            <div class="form-group col-md-6 mb-2">
+                                <label>Your Name</label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Your Email</label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Subject</label>
+                            <input type="text" name="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="10"></textarea>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn-send-msg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-ournewsletter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form method="post">
+                        <input type="email" name="email" class="input-set">
+                        <input type="submit" value="Subscribe" class="btn-set">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 footer-contact">
+                    <h3>Arsha</h3>
+                    <p> A108 Adam Street
+                        <br>
+                        New York, NY 535022
+                        <br>
+                        United States
+                        <br>
+                        <br>
+                        <strong>Phone:</strong>
+                        " +1 5589 55488 55"
+                        <br>
+                        <strong>Email:</strong>
+                        "info@gmail.com"
+                    </p>
+                </div>
+                <div class="col-lg-3 footer-link">
+                    <h4 class="mx-4">Useful Links</h4>
+                    <ul>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Terms of service</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 footer-link">
+                    <h4 class="mx-4">Our Services</h4>
+                    <ul>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Web Design</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Web Development</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Product Management</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Marketing</a>
+                        </li>
+                        <li class="footer-icon-set">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="#">Graphic Design</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 footer-link">
+                    <h4>Our Social Networks</h4>
+                    <p class="pb-3">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                    <div class="social-links">
+                        <a href="" class="mr-2"><i class="fa fa-twitter team-icon"></i></a>
+                        <a href="" class="mr-2"><i class="fa fa-facebook-f team-icon"></i></a>
+                        <a href="" class="mr-2"><i class="fa fa-instagram team-icon"></i></a>
+                        <a href="" class="mr-2"> <i class="fa fa-linkedin team-icon" aria-hidden="true"></i> </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
